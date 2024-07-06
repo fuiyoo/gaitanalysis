@@ -11,7 +11,7 @@ import nolds
 # Add a title to the Streamlit application
 st.title("Machine Learning Deployment")
 
-loaded_model = pickle.load(open('/Users/user/Downloads/NewDatabase/STFT+CWT+DFAsvm_model.sav','rb'))
+loaded_model = pickle.load(open('STFT+CWT+DFAsvm_model.sav','rb'))
 
 # Create a file uploader for the Excel file
 uploaded_file = st.file_uploader("Choose an Excel file", type='xlsx')

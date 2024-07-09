@@ -61,6 +61,13 @@ def calcCWT_norm(stride_interval,time):
     plt.xlabel('Time [sec]')
     plt.ylabel('Frequency [Hz]')
     st.pyplot(plt.gcf())
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(time, rms, color='blue')
+    plt.xlabel('Time [sec]')
+    plt.ylabel('Instantaneous RMS')
+    plt.title('Instantaneous RMS from Continuous Wavelet Transform Coefficients')
+    st.pyplot(plt.gcf())
     
     return max_rms
 
